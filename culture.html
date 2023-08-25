@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Popular Culture & Traditions</title>
+  <style>
+     body {
+      font-family: "Times New Roman", Times, serif;
+      font-weight: bold;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background-color: white;
+      animation: slideUp 1s forwards;
+    }
+
+    header {
+      font-size: 25px;
+      position: sticky;
+      top: 0;
+      background-image: url('background.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      padding: 5px;
+      margin-bottom: 30px;
+      text-align: center;
+      color: white;
+      z-index: 100;
+    }
+
+    .logo {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 20px;
+      margin-top: 25px;
+    }
+
+    .topic {
+      display: flex;
+      align-items: center;
+      margin-bottom: 50px;
+    }
+    
+    .topic img {
+      width: 250px;
+      height: 240px;
+      border-radius: 5%;
+      object-fit: cover;
+      margin-left: 20px;
+      margin-top: 35px;
+    }
+    
+    .definition {
+      flex: 1;
+      padding: 20px;
+      background-color: #f2f2f2;
+      border-radius: 5px;
+      margin-left: 25px;
+      margin-right: 25px;
+      margin-top: 35px;
+      font-size: 20px;
+    }
+    
+    .button-container {
+      text-align: left;
+      margin-top: 25px;
+      margin-left: 20px;
+      animation: slideUp 1s forwards;
+    }
+    
+    .explore-button {
+      font-family: "Times New Roman", Times, serif;
+      padding: 25px 60px; 
+      background-image: url('background.jpg'); 
+      background-size: cover;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 25px; 
+      cursor: pointer;
+      transition: transform 0.3s, background-size 0.3s;
+    }
+    
+    .explore-button:hover {
+      transform: scale(1.05);
+      background-size: 110%; 
+    }
+
+    @keyframes slideUp {
+     from {
+       transform: translateY(50px);
+       opacity: 0;
+    }
+     to {
+       transform: translateY(0);
+       opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img class="logo" src="logo.jpg" alt="Logo">
+    <h1>POPULAR CULTURES & TRADITIONS</h1>
+  </header>
+  
+  <div class="topic">
+    <img src="sakura.jpg" alt="Culture 1">
+    <div class="definition">
+      <h2>SAKURA HANAMI</h2>
+      <p>Hanami, which means "flower viewing" in Japanese, is the traditional custom of enjoying the beauty of cherry blossoms. 
+       It is synonymous with public picnics, friends, and families huddling down under the trees with food and drink.</p>
+    </div>
+  </div>
+  
+  <div class="topic">
+    <img src="tanabata.jpg" alt="Culture 2">
+    <div class="definition">
+      <h2>TANABATA</h2>
+      <p>The Star Festival, as Tanabata is also called, is celebrated in Japan since 755 and thus has a long and rich tradition within the Japanese calendar. 
+         It has its roots in China, in a celebration called Qixi Festival. The tradition was picked up by Empress Koken, the 46th monarch of Japan, who introduced the festival's 
+         lore and traditions to Japan. The people loved the idea behind the Star Festival and it was welcomed with open arms.</p>
+    </div>
+  </div>
+  
+  <div class="topic">
+    <img src="tea.jpg" alt="Culture 3">
+    <div class="definition">
+      <h2>TEA CEREMONY</h2>
+      <p>The tea ceremony is a cultural activity where matcha (green tea) is prepared, served, and consumed. The ceremony developed from Zen Buddhism,
+         and it first appeared during the 9th century. The powdered green tea was first used in Buddhist monasteries and, by the 13th century, the ceremony became a status symbol.</p>
+    </div>
+  </div>
+  
+  <div class="topic">
+    <img src="bon.jpg" alt="Culture 4">
+    <div class="definition">
+      <h2>BON ODORI</h2>
+      <p>Bon Odori is a style of dancing performed during Obon, a Japanese festival to honor the spirits of the ancestors. It is a folk entertainment with a history of nearly 600 years. 
+         The dance and music vary from region to region.</p>
+    </div>
+  </div>
+  
+  <div class="button-container">
+    <button class="explore-button" onclick="window.location.href='japan.html'">EXPLORE MORE</button>
+  </div>
+</body>
+</html>

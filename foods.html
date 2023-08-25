@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Popular Foods</title>
+  <style>
+     body {
+      font-family: "Times New Roman", Times, serif;
+      font-weight: bold;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background-color: white;
+      animation: slideUp 1s forwards;
+    }
+
+    header {
+      font-size: 25px;
+      position: sticky;
+      top: 0;
+      background-image: url('background.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      padding: 5px;
+      margin-bottom: 30px;
+      text-align: center;
+      color: white;
+      z-index: 100;
+    }
+
+    .logo {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 20px;
+      margin-top: 25px;
+    }
+
+    .topic {
+      display: flex;
+      align-items: center;
+      margin-bottom: 50px;
+    }
+    
+    .topic img {
+      width: 250px;
+      height: 240px;
+      border-radius: 5%;
+      object-fit: cover;
+      margin-left: 20px;
+      margin-top: 35px;
+    }
+    
+    .definition {
+      flex: 1;
+      padding: 20px;
+      background-color: #f2f2f2;
+      border-radius: 5px;
+      margin-left: 25px;
+      margin-right: 25px;
+      margin-top: 35px;
+      font-size: 20px;
+    }
+    
+    .button-container {
+      text-align: left;
+      margin-top: 25px;
+      margin-left: 20px;
+      animation: slideUp 1s forwards;
+    }
+    
+    .explore-button {
+      font-family: "Times New Roman", Times, serif;
+      padding: 25px 60px; 
+      background-image: url('background.jpg'); 
+      background-size: cover;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 25px; 
+      cursor: pointer;
+      transition: transform 0.3s, background-size 0.3s;
+    }
+    
+    .explore-button:hover {
+      transform: scale(1.05);
+      background-size: 110%; 
+    }
+
+    @keyframes slideUp {
+     from {
+       transform: translateY(50px);
+       opacity: 0;
+    }
+     to {
+       transform: translateY(0);
+       opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img class="logo" src="logo.jpg" alt="Logo">
+    <h1>POPULAR FOODS</h1>
+  </header>
+  
+  <div class="topic">
+    <img src="sushi.jpg" alt="Food 1">
+    <div class="definition">
+      <h2>SUSHI</h2>
+      <p>Sushi (すし, 寿司, 鮨, 鮓,) is a Japanese dish of prepared vinegared rice (鮨飯, sushi-meshi), usually with some sugar and salt, accompanied by a variety of ingredients (ねた, neta), 
+         such as seafood often raw and vegetables. Styles of sushi and its presentation vary widely, but the one key ingredient is "sushi rice", also referred to as shari (しゃり), or 
+         sumeshi (酢飯). </p>
+    </div>
+  </div>
+  
+  <div class="topic">
+    <img src="ramen.jpg" alt="Food 2">
+    <div class="definition">
+      <h2>RAMEN</h2>
+      <p>Ramen (拉麺, ラーメン or らーめん, rāmen) is a Japanese noodle dish. It consists of Chinese-style wheat noodles (or 中華麺, chūkamen) served in a broth; common flavors are soy sauce and 
+         miso, with typical toppings including sliced pork (chāshū), nori (dried seaweed), menma (bamboo shoots), and scallions. Ramen has its roots in Chinese noodle dishes. Nearly every 
+         region in Japan has its own variation of ramen, such as the tonkotsu (pork bone broth) ramen of Kyushu and the miso ramen of Hokkaido.</p>
+    </div>
+  </div>
+  
+  <div class="topic">
+    <img src="takoyaki.jpg" alt="Food 3">
+    <div class="definition">
+      <h2>TAKOYAKI</h2>
+      <p>Takoyaki (たこ焼き or 蛸焼) is a ball-shaped Japanese snack made of a wheat flour-based batter and cooked in a special molded pan. It is typically filled with minced or diced octopus
+         (tako), tempura scraps (tenkasu), pickled ginger (beni shoga), and green onion (negi). The balls are brushed with takoyaki sauce (similar to Worcestershire sauce) and mayonnaise,
+         and then sprinkled with green laver (aonori) and shavings of dried bonito (katsuobushi).</p>
+    </div>
+  </div>
+  
+  <div class="topic">
+    <img src="mochi.jpg" alt="Food 4">
+    <div class="definition">
+      <h2>MOCHI</h2>
+      <p>Mochi (もち, 餅) is a Japanese rice cake made of mochigome (もち米), a short-grain japonica glutinous rice, and sometimes other ingredients such as water, sugar, and cornstarch. 
+         The steamed rice is pounded into paste and molded into the desired shape. In Japan, it is traditionally made in a ceremony called mochitsuki (餅搗き). While eaten year-round, mochi 
+         is a traditional food for the Japanese New Year, and is commonly sold and eaten during that time.</p>
+    </div>
+  </div>
+  
+  <div class="button-container">
+    <button class="explore-button" onclick="window.location.href='japan.html'">EXPLORE MORE</button>
+  </div>
+</body>
+</html>

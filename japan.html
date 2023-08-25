@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome to Japan!</title>
+  <style>
+    body {
+      font-family: "Times New Roman", Times, serif;
+      font-weight: bold;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background-color: white;
+    }
+
+    header {
+      font-size: 25px;
+      position: sticky;
+      top: 0;
+      background-image: url('background.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      padding: 5px;
+      margin-bottom: 20px;
+      text-align: center;
+      color: white;
+      z-index: 100;
+    }
+
+     .logo {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 20px;
+      margin-top: 25px;
+    }
+
+    h1 {
+      margin: 50px;
+    }
+
+    .topics {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      margin-top: 40px;
+    }
+
+    .topic {
+      font-size: 25px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      cursor: pointer;
+      transition: transform 0.3s, box-shadow 0.3s;
+      margin: 0 25px;
+      margin-bottom: 35px;
+    }
+
+    .topic img {
+      width: 230px;
+      height: 250px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+    }
+
+    .topic:hover {
+      transform: scale(1.1);
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #ff9900;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 4px;
+      transition: transform 0.3s;
+      margin: 0 10px;
+    }
+
+    .button:hover {
+      transform: scale(1.1);
+    }
+    
+    footer {
+      bottom: 0;
+      background-image: url('background.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      padding: 20px;
+      margin-top: 20px;
+      text-align: center;
+      color: white;
+    }
+
+    .social-media {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    .social-media a {
+      display: inline-block;
+      margin: 0 5px;
+      width: 85px;
+      height: 80px;
+    }
+
+    .social-media img {
+      width: 80px;
+      height: 80px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img class="logo" src="logo.jpg" alt="Logo">
+    <h1>EXPLORE JAPAN</h1>
+  </header>
+  
+  <div class="topics">
+    <a href="culture.html" class="topic">
+      <img src="tradition.jpg" alt="Culture">
+      <span>Cultures & Traditions</span>
+    </a>
+    <a href="place.html" class="topic">
+      <img src="places.jpg" alt="Places">
+      <span>Places</span>
+    </a>
+    <a href="religion.html" class="topic">
+      <img src="religion.jpg" alt="Religion">
+      <span>Religions & Beliefs</span>
+    </a>
+    <a href="foods.html" class="topic">
+      <img src="food.jpg" alt="Foods">
+      <span>Foods</span>
+    </a>
+  </div>
+  
+  <footer>
+    <p>Follow us on social media:</p>
+    <div class="social-media">
+      <a href="https://web.facebook.com/olram.shouko" target="_blank"><img src="facebook.png" alt="Facebook"></a>
+      <a href="https://www.instagram.com/akamecabanes_/" target="_blank"><img src="instagram.png" alt="Instagram"></a>
+      <a href="https://discord.com/channels/@me" target="_blank"><img src="discord2.png" alt="Discord"></a>
+     </div>
+    <p>Contact us:</p>
+    <p>Email: mrlobhl14@gmail.com</p>
+    <p>Phone: 09994406586</p>
+    <p>Address: Martinez Subdivision Phase 1, Mati City Davo Oriental, Philippines
+  </footer>
+</body>
+</html>
+
+

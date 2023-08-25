@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Popular Places</title>
+  <style>
+     body {
+      font-family: "Times New Roman", Times, serif;
+      font-weight: bold;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background-color: white;
+      animation: slideUp 1s forwards;
+    }
+
+    header {
+      font-size: 25px;
+      position: sticky;
+      top: 0;
+      background-image: url('background.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      padding: 5px;
+      margin-bottom: 30px;
+      text-align: center;
+      color: white;
+      z-index: 100;
+    }
+
+    .logo {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 20px;
+      margin-top: 25px;
+    }
+
+    .topic {
+      display: flex;
+      align-items: center;
+      margin-bottom: 50px;
+    }
+    
+    .topic img {
+      width: 250px;
+      height: 240px;
+      border-radius: 5%;
+      object-fit: cover;
+      margin-left: 20px;
+      margin-top: 35px;
+    }
+    
+    .definition {
+      flex: 1;
+      padding: 20px;
+      background-color: #f2f2f2;
+      border-radius: 5px;
+      margin-left: 25px;
+      margin-right: 25px;
+      margin-top: 35px;
+      font-size: 20px;
+    }
+    
+    .button-container {
+      text-align: left;
+      margin-top: 25px;
+      margin-left: 20px;
+      animation: slideUp 1s forwards;
+    }
+    
+    .explore-button {
+      font-family: "Times New Roman", Times, serif;
+      padding: 25px 60px; 
+      background-image: url('background.jpg'); 
+      background-size: cover;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 25px; 
+      cursor: pointer;
+      transition: transform 0.3s, background-size 0.3s;
+    }
+    
+    .explore-button:hover {
+      transform: scale(1.05);
+      background-size: 110%; 
+    }
+
+    @keyframes slideUp {
+     from {
+       transform: translateY(50px);
+       opacity: 0;
+    }
+     to {
+       transform: translateY(0);
+       opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img class="logo" src="logo.jpg" alt="Logo">
+    <h1>POPULAR PLACES</h1>
+  </header>
+  
+  <div class="topic">
+    <img src="kyoto.jpg" alt="Place 1">
+    <div class="definition">
+      <h2>KYOTO</h2>
+      <p>Kyoto is considered the cultural capital of Japan and is a major tourist destination. The agency for cultural affairs of the national government is headquartered in the city.
+         It is home to numerous Buddhist temples, Shinto shrines, palaces and gardens, some of which have been designated collectively as a World Heritage Site by UNESCO. </p>
+    </div>
+  </div>
+  
+  <div class="topic">
+    <img src="tokyo.jpg" alt="Place 2">
+    <div class="definition">
+      <h2>TOKYO</h2>
+      <p>Tokyo is known for iconic landmarks like the Tokyo Skytree and Shibuya Crossing. It’s famous for its sakura tree-lined streets, shrines and temples, its otaku culture and 
+         wonderful cuisine, and its world-class transport system. It’s a quirky city that combines millennia-old traditions with futuristic technology.</p>
+    </div>
+  </div>
+  
+  <div class="topic">
+    <img src="hiroshima.jpg" alt="Place 3">
+    <div class="definition">
+      <h2>HIROSHIMA</h2>
+      <p>Hiroshima was the first military target of a nuclear weapon in history. This occurred on August 6, 1945 in the Pacific theatre of World War II, at 8:15 a.m., when the United 
+         States Army Air Forces (USAAF) dropped the atomic bomb "Little Boy" on the city. Most of Hiroshima was destroyed, and by the end of the year between 90,000 and 166,000 had
+         died as a result of the blast and its effects. The Hiroshima Peace Memorial (a UNESCO World Heritage Site) serves as a memorial of the bombing.</p>
+    </div>
+  </div>
+  
+  <div class="topic">
+    <img src="nara.jpg" alt="Place 4">
+    <div class="definition">
+      <h2>NARA</h2>
+      <p>Nara, Japan is famous for being the national capital of Japan from 710 to 784, when it was called Heijō-kyō. The city is most noted for the many ancient Japanese Buddhist 
+         buildings and artifacts in and around the city, including the Seven Great Temples of Nara1. Nara is also famous for Nara Park, home to over 1,000 sacred deer who have learned to 
+         bow for treats. The city has eight UNESCO World Heritage Sites and some of the country’s most significant cultural landmarks.</p>
+    </div>
+  </div>
+  
+  <div class="button-container">
+    <button class="explore-button" onclick="window.location.href='japan.html'">EXPLORE MORE</button>
+  </div>
+</body>
+</html>
